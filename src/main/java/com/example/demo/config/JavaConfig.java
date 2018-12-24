@@ -1,19 +1,18 @@
 package com.example.demo.config;
 
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.ImportResource;
+import com.mystart.hlq.MystartService;
+import org.springframework.context.annotation.Bean;
 
 /**
  * Created by heliqing on 2018/11/30.
  */
-@Configuration
-@ImportResource("classpath*:*.xml")
+//@Configuration
 public class JavaConfig {
 
-//    @Bean
-//    public MystartService mystartService(){
-//        MystartService mystartService = new MystartService();
-//        mystartService.setMsg("我的优先级最高");
-//        return mystartService;
-//    }
+    @Bean
+    public MystartService mystartService(){
+        MystartService mystartService = new MystartService();
+        mystartService.setMsg("我的优先级最高");
+        return mystartService;
+    }
 }
